@@ -1,0 +1,475 @@
+CODE 1 
+  FOR ADDIND, SUBTRACTION, MULTIPLICON
+
+# include<stdio.h>
+
+int main(){
+int a, b;
+printf("enter a");
+scanf("%d" , &a);
+
+printf("enter b");
+scanf("%d" , &b);
+
+int sum = a + b;
+printf("sum is : %d" , sum);
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOR SQUARE
+
+# include<stdio.h>
+// area of square
+int main () {
+    int side;
+    printf("enter side");
+    scanf("%d" , &side);
+
+    printf("area is :%d" , side * side);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+FOR FLOAT LIKE RADIUS 3.14 * 6
+
+# include<stdio.h>
+// area of square
+int main () {
+    float radius;
+    printf("enter radius");
+    scanf("%f" , &radius);
+
+    printf("area is :%f" , 3.14 * radius * radius);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IF AND ELSE
+
+# include<stdio.h>
+
+int main() {
+int age;
+printf("enter age : ");
+scanf("%d", &age);
+
+if (age > 18) {
+    printf("adult \n");
+}
+else if (age > 13 && age < 18) {
+    printf("teenager \n");
+}
+   else {
+    printf("child ");
+   } 
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+CONDITIONAL OPERATORS
+
+
+# include<stdio.h>
+
+int main() {
+    int day; //1_mon; 2_tues; 3_wed
+    printf("enter day(1_7) : ");
+    scanf("%d" , &day);
+    switch(day) {
+case 1 : printf("monday \n");
+          break;
+case 2 : printf("tuesday \n");
+         break;
+case 3 : printf("wednesday \n");
+         break;
+case 4 : printf("thursday \n");
+      break;
+case 5 : printf("friday \n");
+           break;
+case 6 : printf("saturday \n");
+          break;
+case 7 : printf("sunday \n");
+         default : printf("not a valid day! \n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WRITE A PROGRAMME TO CHECK IF A STUDENT PASSED OR FAILED
+
+#include<stdio.h>
+
+int main() {
+int marks;
+    printf("enter number(0_100) : ");
+    scanf("%d", &marks);
+
+    if(marks <= 30) {
+        printf("FAIL \n");
+    } 
+     else {
+        printf ("PASS \n ");
+    }
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+FOR COMPLEX ; WRITE A PROGRAMME TO CHECK IF A STUDENT PASSED OR FAILED
+
+
+
+#include<stdio.h>
+
+int main() {
+int marks;
+    printf("enter number(0_100) : ");
+    scanf("%d", &marks);
+
+    if(marks >=0 && marks <= 30) {
+        printf("FAIL \n");
+    } else if(marks > 30 && marks <=100) {
+        printf("PASS \n");
+    } else {
+        printf ("wrong marks");
+    }
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+FOR EASY METHOD AND ONE LINE METHOD ; WRITE A PROGRAMME TO CHECK IF A STUDENT PASSED OR FAILED
+#include <stdio.h>
+
+int main(){
+    int marks;
+    printf("enter number(0_100) : ");
+    scanf("%d", &marks);
+
+    marks <= 30 ? printf("FAIL \n") : printf("PASS \n");
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+WRITE A PROGRAMME TO GIVE GRADES TO A STUDENT MARKS < 30 IS C ,
+30 <= MARKS < 70 IS B , 70 <= MARKS < 90 IS A , 90 <= MARKS <= 100 IS A+
+
+#include<stdio.h>
+
+int main() {
+int marks;
+    printf("enter number(0_100) : ");
+    scanf("%d", &marks);
+
+if(marks < 30) {
+    printf("C \n");
+}
+else if(marks >= 30 && marks < 70){
+    printf("B \n");
+}
+else if (marks >= 70 && marks < 90) {
+    printf ("A \n");
+}
+else {
+    printf("A+ \n");
+}
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+UPPER CASE OR LOWER CASE 
+
+
+WRITE A PROGRAMM TO FIND IF A CHARACTER ENTERED BY USER IS UPPER CASE OR LOWER CASE ?
+
+
+#include<stdio.h>
+
+int main() {
+    char ch;
+    printf ("enter character : ");
+    scanf("%c" , &ch);
+
+    if(ch >= 'A'  && ch <= 'Z') {
+        printf("upper case \n");
+    }
+else if(ch >= 'a' && ch <='z') {
+    printf("lower case \n");
+}
+else {
+    printf("not english letter \n");
+}
+
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+FOR LOOP
+
+ HOW TO PRINT HELLO WORLD IN 1000 TIMES FOR LOOP TYPE ?
+
+
+
+#include<stdio.h>
+
+int main() {
+    for(int i=1; i<=1000; i = i+1) {
+        printf("Hello World \n");
+    }
+return 0;
+}
+
+
+
+
+
+
+
+FOR LOOP TYPE
+
+
+HOW TO PRINT NUMBER IN UNLIMITED FORM ?
+
+HOW TO PRINT THE NUMBER FROM 1 T0 100 ?
+
+
+
+#include<stdio.h>
+
+int main() {
+    for(int i=1; i<=100; i = i+1) {
+        printf("%d \n" , i);
+    }
+return 0;
+}
+
+
+
+
+
+
+
+
+FOR LOOP TYPE
+
+HOW TO PRINT THE NUMBER FROM O TO 10 ?
+
+#include <stdio.h>
+
+int main()
+{
+    for (int i=0; i<=10; i= i+1)
+    {
+        printf("%d \n", i);
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+FOR LOOP TYPE
+
+HOW TO PRINT NUMBER IN UNLIMITED FOR SUBTRACTION
+HOW TO PRINT NUMBER FROM 1000 TO 1 ?
+
+#include <stdio.h>
+
+int main()
+{
+    for (int i = 1000; i >= 1; i = i - 1)
+    {
+        printf("%d \n", i);
+    }
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+HOW TO PRINT NUMBER IN FLOT FORM ( LIKE DECIMAL FORM )
+
+
+#include<stdio.h>
+
+int main() {
+    for (float i=1.0; i<=5.0; i++) {
+        printf("%f \n", i);
+    }
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+WHILE LOOP TYPE
+
+PRINT THE HELLO WORLD BY WHILE LOOP FORM
+
+
+#include<stdio.h>
+
+int main() {
+int i=1;
+while(i <=5) {
+    printf("Hello World\n");
+    i++;
+}
+return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+WHILE LOOP TYPE
+
+PRINT THE NUMBER FROM 0 TO N , IF N IS GIVEN BY USER (n=4)
+
+
+#include<stdio.h>
+
+int main() {
+int n;
+printf("enter number : ");
+scanf("%d" , &n);
+
+int i=0;
+while(i <=n) {
+    printf("%d\n",i);
+    i++;
+}
+
+return 0;
+}
